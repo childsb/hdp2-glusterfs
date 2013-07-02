@@ -1,0 +1,28 @@
+<configuration>
+    
+    <property>
+        <name>fs.defaultFS</name>
+        <value>glusterfs://amb-1:9000</value>
+    </property>
+    
+    <property>
+        <name>fs.default.name</name>
+        <value>glusterfs://amb-1:9000</value>
+    </property>
+    
+    <property>
+        <name>fs.AbstractFileSystem.glusterfs.impl</name>
+        <value>org.apache.hadoop.fs.local.GlusterFS</value>
+    </property>
+    
+    <property>
+        <name>fs.glusterfs.impl</name>
+        <value>org.apache.hadoop.fs.glusterfs.GlusterFileSystem</value>
+    </property>
+    
+    <property>
+        <name>fs.glusterfs.mount</name>
+        <value>/mnt/glusterfs</value>
+    </property>
+    
+</configuration>
