@@ -37,7 +37,7 @@ public class GlusterFileSystem extends LocalFileSystem{
     
     protected static final Logger log = LoggerFactory.getLogger(GlusterFileSystem.class);
     protected String glusterMount=null;
-    public static final URI BASE_URI = URI.create("glfs:///");
+    public static final URI BASE_URI = URI.create("file:");
     
     public GlusterFileSystem(){
         super(new GlusterDebugFileSystem());
