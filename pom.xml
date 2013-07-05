@@ -54,13 +54,10 @@
 			-->
 		    <systemProperties>
 				          <property>
-				             <name>GLUSTER_HOST</name>
+				             <name>GLUSTER_MOUNT</name>
 				             <value>${GLUSTER_HOST}</value>
 				          </property>
-				           <property>
-				             <name>GLUSTER_VOLUME</name>
-				             <value>${GLUSTER_VOLUME}</value>
-				          </property>
+
 			</systemProperties>
 		 </configuration>
  	 </plugin>
@@ -78,6 +75,8 @@
       
     </plugins>
   </build>
+    
+   <!-- This is a repo i created to host the HDP 2.0 deps. -->
    <repositories>
         <repository>
             <id>snuffydeps</id>
