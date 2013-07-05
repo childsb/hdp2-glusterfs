@@ -11,29 +11,24 @@
   <url>https://github.com/gluster/hadoop-glusterfs</url>
  
   <dependencies>
-    <!--
-      <dependency>
-          <groupId>org.apache.hadoop</groupId>
-          <artifactId>hadoop-core</artifactId>
-          <version>0.20.2</version>
-      </dependency>
-    -->  
+    <dependency>
+	<groupId>org.apache.hadoop</groupId>
+	<artifactId>hadoop-common</artifactId>
+	<version>2.0.3-alpha</version>
+    </dependency>
+            
+
     <dependency>
 	<groupId>junit</groupId>
 		<artifactId>junit</artifactId>
 		<version>4.4</version>
-	</dependency>
-    <dependency>
-      <groupId>hdp</groupId>
-      <artifactId>common</artifactId>
-      <version>2.0.3.22-alpha</version>
     </dependency>
     <dependency>
-	    <groupId>org.slf4j</groupId>
-	    <artifactId>slf4j-api</artifactId>
-	    <version>1.5.8</version>
-    	<scope>compile</scope>
-	</dependency>
+     <groupId>org.slf4j</groupId>
+     <artifactId>slf4j-api</artifactId>
+     <version>1.5.8</version>
+    <scope>compile</scope>
+   </dependency>
 	<dependency>	
 		<groupId>org.slf4j</groupId>
 		<artifactId>slf4j-log4j12</artifactId>
@@ -76,14 +71,5 @@
     </plugins>
   </build>
     
-   <!-- This is a repo i created to host the HDP 2.0 deps. -->
-   <repositories>
-        <repository>
-            <id>snuffydeps</id>
-            <name>S3 Snapshot Repository</name>
-            <url>https://s3.amazonaws.com/snuffy</url>
-        </repository>
-
-    </repositories>
     
 </project>
