@@ -38,7 +38,7 @@ import org.slf4j.LoggerFactory;
 public class GlusterVolume extends RawLocalFileSystem{
 
     static final Logger log = LoggerFactory.getLogger(GlusterFileSystem.class);
-    static final URI NAME = URI.create("glusterfs:///");
+    public static final URI NAME = URI.create("glusterfs:///");
     
     protected String root=null;
     
