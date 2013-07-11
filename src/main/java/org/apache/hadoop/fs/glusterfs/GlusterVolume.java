@@ -109,7 +109,7 @@ public class GlusterVolume extends RawLocalFileSystem{
         int j = 0;
         for (int i = 0; i < names.length; i++) {
           try {
-            results[j] = getFileStatus(new Path(names[i].getAbsolutePath()));
+            results[j] = getFileStatus(fileToPath(names[i]));
             j++;
           } catch (FileNotFoundException e) {
             // ignore the files not found since the dir list may have have changed
