@@ -16,6 +16,13 @@
   </property>
 
   <property>
+    <name>fs.AbstractFileSystem.glusterfs.impl</name>
+    <value>org.apache.hadoop.fs.local.GlusterFs</value> 
+  </property>
+
+
+
+  <property>
     <name>fs.glusterfs.volname</name>
     <value>HadoopVol</value>
   </property>
@@ -30,10 +37,6 @@
     <value>RHS-1</value>
   </property>
 
-  <property>
-  <name>fs.glusterfs.write.buffer.size</name>
-  <value>1024</value>
-  </property>
   
   
 </configuration>
